@@ -3,12 +3,12 @@
 Contact
 {% endblock title %}
 {% block body %}
-<div class="conatiner">
+<div class="conatiner-fluid my-2 px-1">
   <div class="carousel-item active">
-    <h1 >SHARWAL'S LIBRARY</h1>
+    <h1 class="text-center shadow" style=" background-color: aquamarine; position: absolute; border-radius: 11px;">SHARWAL'S LIBRARY</h1>
     <img src="/static/ntn.jpg" height="600" width="900" class="d-block w-100" alt="...">
     <div class="conatiner fluid-my-4 px-4 py-4">
-      <h2 class="text-center" font style="color: chocolate;">Contatct us</h2>
+      <h2 class="text-center" style="color: chocolate;">Contatct us</h2>
       <form method="POST" action="/contact">
         {% csrf_token %}
         <div class="form-group">
